@@ -1,6 +1,5 @@
 package com.mystore.pages;
 import com.mystore.base.ActionInterface;
-import com.mystore.utility.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.parser.ParseException;
@@ -15,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 public class BasePage implements ActionInterface {
@@ -63,12 +61,5 @@ public class BasePage implements ActionInterface {
         // TODO Auto-generated method stub
         return null;
     }
-// Method to get login credentials from JSON file and return as a HashMap
-    public static HashMap<String,String>getCredentials(String fileName) throws IOException, ParseException {
-        return FileUtils.getJsonCredentials(fileName);
-    }
-    public static List<HashMap<String,String>>getexcelCredentials(String fileName) throws IOException, ParseException {
-        return FileUtils.getexcelData(fileName);
 
-    }
 }

@@ -3,7 +3,6 @@ package com.mystore.steps;
 import com.mystore.customException.MissingConfigurationException;
 import com.mystore.hooks.Hook;
 import com.mystore.pages.CartPage;
-import com.mystore.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
