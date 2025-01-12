@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="MyStoreApplication">
+        <classes>
+            <class name="com.mystore.TestRunner.CucumberRunnerIT"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.mystore.RetryFailedCases.AnnotationTransformer"/>
+    </listeners>
+</suite>
